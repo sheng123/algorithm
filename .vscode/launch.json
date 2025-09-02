@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "LongestChildString",
+            "request": "launch",
+            "mainClass": "longest_child_string.LongestChildString",
+            "projectName": "algorithm_adece616"
+        },
+        {
             "name": "Launch Package",
             "type": "go",
             "request": "launch",
