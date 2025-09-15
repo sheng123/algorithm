@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "BinarySearch",
+            "request": "launch",
+            "mainClass": "binary_search.BinarySearch",
+            "projectName": "algorithm_adece616"
+        },
+        {
+            "type": "java",
             "name": "LongestChildString",
             "request": "launch",
             "mainClass": "longest_child_string.LongestChildString",
