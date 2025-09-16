@@ -9,6 +9,29 @@ public class LongestChildString {
         String str = "abcabcdefcaabb";
         System.out.println(longestChildString(str));
         System.out.println("max lenght is: " + maxLength(str));
+
+        int[] array = {1,2,3,1,2,3,4,5,6,3,1,1,2,2};
+        System.out.println(longestChildArray(array));
+    }
+
+    public static int longestChildArray(int[] arr) {
+        int left = 0;
+        int right = 0;
+        Set<Integer> set = new HashSet<>();
+        int maxLength = 0;
+
+        while (right < arr.length) {
+            if (!set.contains(arr[right])) {
+                set.add(arr[right]);
+                maxLength = Math.max(maxLength, right - left + 1);
+                right++;
+            } else {
+                set.remove(arr[left]);
+                left++;
+            }
+
+        }
+        return maxLength;
     }
 
     public static String longestChildString(String str) {

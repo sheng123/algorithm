@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MaxConsecutiveNumber",
+            "request": "launch",
+            "mainClass": "max_consecutive_number.MaxConsecutiveNumber",
+            "projectName": "algorithm_adece616"
+        },
+        {
+            "type": "java",
+            "name": "Solution",
+            "request": "launch",
+            "mainClass": "add_two_numbers.Solution",
+            "projectName": "algorithm_adece616"
+        },
+        {
+            "type": "java",
+            "name": "BubbleSort",
+            "request": "launch",
+            "mainClass": "sort.bubble_sort.BubbleSort",
+            "projectName": "algorithm_adece616"
+        },
+        {
+            "type": "java",
+            "name": "SelectionSort",
+            "request": "launch",
+            "mainClass": "sort.selection_sort.SelectionSort",
+            "projectName": "algorithm_adece616"
+        },
+        {
+            "type": "java",
             "name": "TwoSum",
             "request": "launch",
             "mainClass": "two_sum.TwoSum",
