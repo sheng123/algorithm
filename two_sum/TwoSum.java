@@ -2,6 +2,7 @@ package two_sum;
 
 import java.util.ArrayList;
 
+// 求两数之和
 public class TwoSum {
     public static void main(String[] args) {
         int[] array = { 1, 3, 6, 7, 9, 10, 14, 15 };
