@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "BracketsValid",
+            "request": "launch",
+            "mainClass": "valid_brackets.BracketsValid",
+            "projectName": "algorithm_adece616"
+        },
+        {
+            "type": "java",
             "name": "MaxConsecutiveNumber",
             "request": "launch",
             "mainClass": "max_consecutive_number.MaxConsecutiveNumber",
