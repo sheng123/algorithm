@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "FractionCalculator",
+            "request": "launch",
+            "mainClass": "Fraction.FractionCalculator",
+            "projectName": "algorithm_adece616"
+        },
+        {
+            "type": "java",
+            "name": "FractionCalculator",
+            "request": "launch",
+            "mainClass": "字符串.FractionCalculator",
+            "projectName": "algorithm_adece616"
+        },
+        {
+            "type": "java",
             "name": "BracketsValid",
             "request": "launch",
             "mainClass": "valid_brackets.BracketsValid",
