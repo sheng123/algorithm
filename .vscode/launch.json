@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SingleNumber",
+            "request": "launch",
+            "mainClass": "single_number.SingleNumber",
+            "projectName": "algorithm_adece616"
+        },
+        {
+            "type": "java",
             "name": "FractionCalculator",
             "request": "launch",
             "mainClass": "Fraction.FractionCalculator",
