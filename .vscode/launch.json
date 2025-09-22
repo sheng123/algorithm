@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "InsertionSort",
+            "request": "launch",
+            "mainClass": "sort.insertion_sort.InsertionSort",
+            "projectName": "algorithm_adece616"
+        },
+        {
+            "type": "java",
             "name": "SingleNumber",
             "request": "launch",
             "mainClass": "single_number.SingleNumber",

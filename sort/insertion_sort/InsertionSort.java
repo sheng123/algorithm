@@ -1,30 +1,27 @@
-package sort.selection_sort;
+package sort.insertion_sort;
 
 import java.util.Arrays;
 
-public class SelectionSort {
-
+public class InsertionSort {
     public static void main(String[] args) {
         int[] nums = { 3, 2, 1, 3, 5, 6, 7, 12, 34, 56 };
 
-        int[] result = selectionSort(nums);
+        int[] result = insertionSort(nums);
 
         System.out.println(Arrays.toString(result));
     }
 
-    // 每次遍历整个数组，从中选出最小或者最大的值
-    public static int[] selectionSort(int[] nums) {
+    // 依次遍历数组，取出最新遍历的数字，插入到合适的位置
+    public static int[] insertionSort(int[] nums) {
         if (nums == null || nums.length == 1) {
             return nums;
         }
 
-        for (int i = 0; i < nums.length - 1; i++) {
-            int minIndex = i;
-            for (int j = i + 1; j < nums.length; j++) {
-                minIndex = nums[j] < nums[minIndex] ? j : minIndex;
+        for (int i = 1; i < nums.length; i++) {
+            for (int j = i - 1; j >= 0 && nums[j] > nums[j+1]; j--) {
+                swap(nums, j, j+1);
             }
 
-            swap(nums, i, minIndex);
         }
 
         return nums;

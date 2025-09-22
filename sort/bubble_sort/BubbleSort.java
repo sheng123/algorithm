@@ -16,6 +16,7 @@ public class BubbleSort {
             return nums;
         }
 
+        // 每次遍历，把最大的值像气泡一样，放在最后面的位置
         for (int e = nums.length - 1; e > 0; e--) {
             for (int i = 0; i < e; i++) {
                 if (nums[i] > nums[i + 1]) {
