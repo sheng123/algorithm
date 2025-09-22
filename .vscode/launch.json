@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "LocalMin",
+            "request": "launch",
+            "mainClass": "find_local_min.LocalMin",
+            "projectName": "algorithm_adece616"
+        },
+        {
+            "type": "java",
             "name": "InsertionSort",
             "request": "launch",
             "mainClass": "sort.insertion_sort.InsertionSort",
