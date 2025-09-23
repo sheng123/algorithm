@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MergeSort",
+            "request": "launch",
+            "mainClass": "sort.merge_sort.MergeSort",
+            "projectName": "algorithm_adece616"
+        },
+        {
+            "type": "java",
             "name": "LocalMin",
             "request": "launch",
             "mainClass": "find_local_min.LocalMin",
