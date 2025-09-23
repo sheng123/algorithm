@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "QuickSort",
+            "request": "launch",
+            "mainClass": "sort.quick_sort.QuickSort",
+            "projectName": "algorithm_adece616"
+        },
+        {
+            "type": "java",
             "name": "SmallSum",
             "request": "launch",
             "mainClass": "sort.merge_sort.small_sum.SmallSum",
