@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "HeapSort",
+            "request": "launch",
+            "mainClass": "sort.heap_sort.HeapSort",
+            "projectName": "algorithm_adece616"
+        },
+        {
+            "type": "java",
             "name": "QuickSort",
             "request": "launch",
             "mainClass": "sort.quick_sort.QuickSort",
