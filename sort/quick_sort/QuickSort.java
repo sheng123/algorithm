@@ -31,6 +31,7 @@ public class QuickSort {
     // 1.当前值比 arr[r] 小，和小于区下一个交换，小于区右扩，当前位置加1
     // 2.当前值比 arr[r] 大，和大于区前一个交换，大于区左扩，当前位置不变
     // 3.当前值等于 arr[r]，当前位置加1
+    // 4.返回的是等于区的左右边界
     public static int[] partition(int[] arr, int l, int r) {
         int pivot = arr[r];
         int less = l - 1;
