@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ListPartition",
+            "request": "launch",
+            "mainClass": "link_list.list_partition.ListPartition",
+            "projectName": "algorithm_adece616"
+        },
+        {
+            "type": "java",
             "name": "ThreePartitionList",
             "request": "launch",
             "mainClass": "link_list.three_partition_list.ThreePartitionList",
