@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ThreePartitionList",
+            "request": "launch",
+            "mainClass": "link_list.three_partition_list.ThreePartitionList",
+            "projectName": "algorithm_adece616"
+        },
+        {
+            "type": "java",
+            "name": "PalindromeList",
+            "request": "launch",
+            "mainClass": "link_list.palindrome.PalindromeList",
+            "projectName": "algorithm_adece616"
+        },
+        {
+            "type": "java",
             "name": "HeapSort",
             "request": "launch",
             "mainClass": "sort.heap_sort.HeapSort",
