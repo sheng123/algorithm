@@ -31,7 +31,7 @@ public class ThreePartitionList {
 
         Node n = threePartitionList(head, 5);
 
-        System.out.println(n);
+        System.out.println(n.value);
     }
 
     // 快速的解法，把链表转换成 Node 列表，按照列表进行荷兰国旗算法划分
