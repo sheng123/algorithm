@@ -2,11 +2,11 @@ package link_list.loop_list;
 
 import link_list.list_partition.ListPartition.Node;
 
+// 判断两个链表是否相交，并且给出交点
 public class LoopList {
     public static void main(String[] args) {
         int[] arr1 = { 1, 2, 3, 5, 3, 4, 8, 6, 8, 2, 1 };
         int[] arr2 = { 1, 2, 3, 5, 3, 4 };
-
 
         Node head1 = new Node(arr1[0]);
         Node cur1 = head1;
@@ -30,7 +30,7 @@ public class LoopList {
         // 构建一个有环的链表
         // cur.next = head.next.next.next;
 
-        Node n = noLoop(head1, head2);
+        Node n = getIntersectNode(head1, head2);
 
         if (n != null) {
             System.out.println(n.value);
@@ -39,7 +39,85 @@ public class LoopList {
         }
     }
 
-    // 判断两个链表是否相交，如果相交的话，给出交点的 Node
+    // 判断两个链表是否相交
+    public static Node getIntersectNode(Node head1, Node head2) {
+        /*
+         * 1.两个链表都无环的情况，判断是否相交
+         * 2.一个链表有环，一个链表无环，不可能存在
+         * 3.两个链表都有环的情况
+         * a.不相交
+         * b.相交，交点相同
+         * c.相交，交点不同
+         */
+        if (head1 == null || head2 == null) {
+            return null;
+        }
+
+        Node loop1 = getLoopNode(head1);
+        Node loop2 = getLoopNode(head2);
+        if (loop1 == null && loop2 == null) {
+            return noLoop(head1, head2);
+        }
+
+        if (loop1 != null && loop2 != null) {
+            return bothLoop(head1, loop1, head2, loop2);
+        }
+        return null;
+    }
+
+    // 两个链表都有环的情况
+    public static Node bothLoop(Node head1, Node loop1, Node head2, Node loop2) {
+        // 1.两个链表相交，并且交点相同的情况，类似与 noLoop 的操作
+        // 2.不相交和交点不同的情况，只需要从 loop1 开始，不断的进行 next 操作，如果回到 loop1 的时候，还是没有 loop2，那么就不相交
+        Node current1 = null;
+        Node current2 = null;
+        if (loop1 == loop2) {
+            current1 = head1;
+            current2 = head2;
+
+            int lenght1 = 0;
+            int lenght2 = 0;
+            while (current1 != null) {
+                lenght1++;
+                current1 = current1.next;
+            }
+
+            while (current2 != null) {
+                lenght2++;
+                current2 = current2.next;
+            }
+
+            current1 = lenght1 > lenght2 ? head1 : head2;
+            current2 = current1 == head1 ? head2 : head1;
+            int step = Math.abs(lenght1 - lenght2);
+            while (step != 0) {
+                step--;
+                current1 = current1.next;
+            }
+
+            while (current1 != current2) {
+                current1 = current1.next;
+                current2 = current2.next;
+            }
+            return current1;
+
+        } else {
+            // 交点不同的时候，要嘛相交，要嘛不相交，使用 current1 沿着环走一圈
+            // 如果不能与 loop2 相等，那么必定不相交；
+            // 如果相等，loop1 和 loop2 都是交点，随便返回一个就行
+            current1 = loop1.next;
+            while (current1 != loop1) {
+                if (current1 == loop2) {
+                    return loop1;
+                }
+                current1 = current1.next;
+            }
+
+            return null;
+        }
+    }
+
+    // 判断两个无环链表是否相交，如果相交的话，给出交点的 Node
     public static Node noLoop(Node head1, Node head2) {
         /*
          * 1.先确定两个链表是没有环的
