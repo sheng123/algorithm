@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "LoopList",
+            "request": "launch",
+            "mainClass": "link_list.loop_list.LoopList",
+            "projectName": "algorithm_adece616"
+        },
+        {
+            "type": "java",
             "name": "ListPartition",
             "request": "launch",
             "mainClass": "link_list.list_partition.ListPartition",
