@@ -1,11 +1,8 @@
 package tree.order_recur;
 
-import java.util.LinkedList;
-import java.util.Queue;
 import java.util.Stack;
 
 import tree.TreeNode;
-import tree.PrintTree;
 
 // 二叉树的深度优先遍历就是先序遍历
 public class TreeOrderRecur {
@@ -39,38 +36,6 @@ public class TreeOrderRecur {
         posOrderRecur(head);
         System.out.println();
         posOrderUnrecur(head);
-        System.out.println();
-        System.out.println("wide order");
-        wideOrder(head);
-    }
-
-    // 宽度遍历
-    // 使用队列来处理
-    public static void wideOrder(TreeNode head) {
-        /*
-         * 1.先把头节点加入队列
-         * 2.取出头节点，打印
-         * 3.把取出的节点的左节点放入队列（不为空的话）
-         * 4.把取出的节点的右节点放入队列（不为空的话）
-         * 5.循环
-         */
-        if (head == null) {
-            return;
-        }
-
-        Queue<TreeNode> queue = new LinkedList<>();
-        queue.add(head);
-        while (!queue.isEmpty()) {
-            TreeNode cur = queue.poll();
-            System.out.print(cur.value + " ");
-            if (cur.left != null) {
-                queue.add(cur.left);
-            }
-            if (cur.right != null) {
-                queue.add(cur.right);
-            }
-        }
-
     }
 
     // 前序遍历

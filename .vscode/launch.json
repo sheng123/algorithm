@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TreeWideOrder",
+            "request": "launch",
+            "mainClass": "tree.wide_order.TreeWideOrder",
+            "projectName": "algorithm_adece616"
+        },
+        {
+            "type": "java",
             "name": "TreeOrderRecur",
             "request": "launch",
             "mainClass": "tree.order_recur.TreeOrderRecur",
