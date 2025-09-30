@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Bst",
+            "request": "launch",
+            "mainClass": "tree.bst.Bst",
+            "projectName": "algorithm_adece616"
+        },
+        {
+            "type": "java",
             "name": "TreeWideOrder",
             "request": "launch",
             "mainClass": "tree.wide_order.TreeWideOrder",
