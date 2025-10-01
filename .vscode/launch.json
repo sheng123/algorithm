@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Cbt",
+            "request": "launch",
+            "mainClass": "tree.cbt.Cbt",
+            "projectName": "algorithm_adece616"
+        },
+        {
+            "type": "java",
             "name": "Bst",
             "request": "launch",
             "mainClass": "tree.bst.Bst",
