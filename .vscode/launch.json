@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Balance",
+            "request": "launch",
+            "mainClass": "tree.balance.Balance",
+            "projectName": "algorithm_adece616"
+        },
+        {
+            "type": "java",
             "name": "Cbt",
             "request": "launch",
             "mainClass": "tree.cbt.Cbt",
