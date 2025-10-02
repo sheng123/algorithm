@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "LowestAncestor",
+            "request": "launch",
+            "mainClass": "tree.lowest_ancestor.LowestAncestor",
+            "projectName": "algorithm_adece616"
+        },
+        {
+            "type": "java",
+            "name": "FullTree",
+            "request": "launch",
+            "mainClass": "tree.full_tree.FullTree",
+            "projectName": "algorithm_adece616"
+        },
+        {
+            "type": "java",
+            "name": "IsoscelesRightTriangleSpiral",
+            "request": "launch",
+            "mainClass": "array.triangle.IsoscelesRightTriangleSpiral",
+            "projectName": "algorithm_adece616"
+        },
+        {
+            "type": "java",
+            "name": "IsoscelesRightTriangleSpiral",
+            "request": "launch",
+            "mainClass": "two_sum.sum.IsoscelesRightTriangleSpiral",
+            "projectName": "algorithm_adece616"
+        },
+        {
+            "type": "java",
+            "name": "Sum",
+            "request": "launch",
+            "mainClass": "two_sum.sum.Sum",
+            "projectName": "algorithm_adece616"
+        },
+        {
+            "type": "java",
             "name": "Balance",
             "request": "launch",
             "mainClass": "tree.balance.Balance",
