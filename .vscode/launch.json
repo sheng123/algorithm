@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "FullTree",
+            "request": "launch",
+            "mainClass": "tree.full_tree.FullTree",
+            "projectName": "algorithm_adece616"
+        },
+        {
+            "type": "java",
+            "name": "IsoscelesRightTriangleSpiral",
+            "request": "launch",
+            "mainClass": "array.triangle.IsoscelesRightTriangleSpiral",
+            "projectName": "algorithm_adece616"
+        },
+        {
+            "type": "java",
             "name": "IsoscelesRightTriangleSpiral",
             "request": "launch",
             "mainClass": "two_sum.sum.IsoscelesRightTriangleSpiral",

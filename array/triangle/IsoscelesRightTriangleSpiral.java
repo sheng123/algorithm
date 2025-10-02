@@ -1,4 +1,4 @@
-package two_sum.sum;
+package array.triangle;
 
 public class IsoscelesRightTriangleSpiral {
 
