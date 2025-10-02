@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "IsoscelesRightTriangleSpiral",
+            "request": "launch",
+            "mainClass": "two_sum.sum.IsoscelesRightTriangleSpiral",
+            "projectName": "algorithm_adece616"
+        },
+        {
+            "type": "java",
+            "name": "Sum",
+            "request": "launch",
+            "mainClass": "two_sum.sum.Sum",
+            "projectName": "algorithm_adece616"
+        },
+        {
+            "type": "java",
             "name": "Balance",
             "request": "launch",
             "mainClass": "tree.balance.Balance",
