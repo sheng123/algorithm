@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "graph.Main",
+            "projectName": "algorithm_adece616"
+        },
+        {
+            "type": "java",
             "name": "PaperFolding",
             "request": "launch",
             "mainClass": "tree.paper_folding.PaperFolding",
