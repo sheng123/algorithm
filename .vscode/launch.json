@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "trie_tree.Main",
+            "projectName": "algorithm_adece616"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "graph.Main",
             "projectName": "algorithm_adece616"
         },
