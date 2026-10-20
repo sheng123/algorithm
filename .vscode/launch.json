@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "greedy.office_use.Main",
+            "projectName": "algorithm_adece616"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "trie_tree.Main",
             "projectName": "algorithm_adece616"
         },
@@ -44,20 +51,6 @@
             "name": "IsoscelesRightTriangleSpiral",
             "request": "launch",
             "mainClass": "array.triangle.IsoscelesRightTriangleSpiral",
-            "projectName": "algorithm_adece616"
-        },
-        {
-            "type": "java",
-            "name": "IsoscelesRightTriangleSpiral",
-            "request": "launch",
-            "mainClass": "two_sum.sum.IsoscelesRightTriangleSpiral",
-            "projectName": "algorithm_adece616"
-        },
-        {
-            "type": "java",
-            "name": "Sum",
-            "request": "launch",
-            "mainClass": "two_sum.sum.Sum",
             "projectName": "algorithm_adece616"
         },
         {
@@ -181,13 +174,6 @@
         },
         {
             "type": "java",
-            "name": "FractionCalculator",
-            "request": "launch",
-            "mainClass": "字符串.FractionCalculator",
-            "projectName": "algorithm_adece616"
-        },
-        {
-            "type": "java",
             "name": "BracketsValid",
             "request": "launch",
             "mainClass": "valid_brackets.BracketsValid",
@@ -204,8 +190,7 @@
             "type": "java",
             "name": "Solution",
             "request": "launch",
-            "mainClass": "add_two_numbers.Solution",
-            "projectName": "algorithm_adece616"
+            "mainClass": "add_two_numbers.Solution"
         },
         {
             "type": "java",
